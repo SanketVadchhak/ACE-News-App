@@ -1,0 +1,77 @@
+
+.title-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg, 
+    #212529, 
+    #343a40, 
+    #212529, 
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add this to src/index.css */
+
+.card-glass {
+  .card-glass {
+    background-color: #212529;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+.card-border-wrap {
+  padding: 3px;
+  background: linear-gradient(
+    -45deg, 
+    #BF953F, /* A darker bronze */
+    #FCF6BA, /* A light gold/cream */
+    #B38728, /* A classic gold */
+    #FBF5B7, /* Another light gold */
+    #AA771C  /* A darker gold */
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 8s ease infinite;
+  border-radius: 1.25rem;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

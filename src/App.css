@@ -1,0 +1,10 @@
+
+.button-as-link {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
